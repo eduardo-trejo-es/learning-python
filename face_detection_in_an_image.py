@@ -42,6 +42,6 @@ for (x,y,width, high) in face_coordinates:
  
 #We open a window with the result:
 cv2.imshow('Output', img)
-print("\nMostrando resultado. Pulsa cualquier tecla para salir.\n")
+print("\nShowing result. Press any key to exit.\n")
 cv2.waitKey(0)
 cv2.destroyAllWindows()
