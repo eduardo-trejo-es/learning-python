@@ -35,12 +35,12 @@ face_coordinates = waterfall_face.detectMultiScale(img_gris, 1.3, 5)
 # results in fewer detections but more reliability.
  
  
-#Ahora recorremos el array 'face_coordinates' y dibujamos los rectángulos sobre la imagen original:
-for (x,y,ancho, alto) in face_coordinates:
-    cv2.rectangle(img, (x,y), (x+ancho, y+alto), (0,0,255) , 3)
+#Now we go through the 'face_coordinates' array and draw the rectangles over the original image:
+for (x,y,width, high) in face_coordinates:
+    cv2.rectangle(img, (x,y), (x+width, y+high), (0,0,255) , 3)
  
  
-#Abrimos una ventana con el resultado:
+#We open a window with the result:
 cv2.imshow('Output', img)
 print("\nMostrando resultado. Pulsa cualquier tecla para salir.\n")
 cv2.waitKey(0)
